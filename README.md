@@ -1,21 +1,14 @@
-Class Project for "Getting and Cleaning Data"
+#Class Project for "Getting and Cleaning Data"
 
-The class project for Getting and Cleaning Data was to read in the "Human Activity Recognition Using Smartphones" data set, perform an analysis on the data set, and output a tidy data set.
+The project required reading the "Human Activity Recognition Using Smartphones" data set from
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-Here are the steps that must be performed before running the R script:
+This data set should be extracted into the R working directory.
 
-Download the zip file from this URL.
-Unzip the file.
-Move ALL of the following files to the SAME DIRECTORY as the R script:
-features.txt
-subject_train.txt
-subject_test.txt
-X_train.txt
-X_test.txt
-y_train.txt
-y_test.txt
-Once those steps are complete, you can run the R script (run_analysis.R). Note that it requires the reshape2 package, which can be downloaded from CRAN.
+An R script called run_analysis.R can be executed to:
+* Merge training and the test sets to create one data set.
+* Extract only the mean and standard deviation measurements. 
+* Use descriptive activity names to name the data set activities.
+* Appropriately label the data set with descriptive variable names. 
 
-The output of the R script is a tidy data set, tidy.csv.
-
-You can read more about the data and the analysis in the code book.
+From this data set (data_set.txt), create a tidy data set (tidy_data.txt) with the average of each variable for each activity and each subject.
